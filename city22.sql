@@ -1,0 +1,13 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS 'cities' ('city_id' INTEGER PRIMARY KEY AUTOINCREMENT, 'name' VARCHAR);
+INSERT INTO cities VALUES(1,'Montreal');
+CREATE TABLE IF NOT EXISTS 'events'('event_id' INTEGER PRIMARY KEY AUTOINCREMENT, 'city_id' INTEGER, 'name' VARCHAR, 'location' VARCHAR, 'date_time' TEXT "YYYY-MM-DD HH:MM", FOREIGN KEY ('city_id') REFERENCES cities('city_id'));
+INSERT INTO events VALUES(1,1,'Montreal Space Symposium','ICAO','2019-10-10 08:00');
+INSERT INTO events VALUES(2,1,'Deep Learning Summit','Delta Hotels by Marriott Montreal','2019-10-24 08:15');
+INSERT INTO events VALUES(3,1,'The Business Beyond Borders Summit','Bronfman Building','2019-10-04 14:00');
+INSERT INTO events VALUES(4,1,'Accelerate','DoubleTree by Hilton Montreal','2019-10-09 08:30');
+DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('cities',1);
+INSERT INTO sqlite_sequence VALUES('events',4);
+COMMIT;

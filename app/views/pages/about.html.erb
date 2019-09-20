@@ -2,6 +2,8 @@
 <script src="https://kit.fontawesome.com/cb3a12ad74.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
 
+
+<!-- Banner -->
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);">
   <div class="container">
     <h1>Stay22</h1>
@@ -9,15 +11,17 @@
   </div>
 </div>
 
+
 <h1 class="text"> SPACE </h1>
-<!-- <h1>Landing Page</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
- -->
-<script id="stay22-script">
+
+
+<!-- Stay22 Map -->
+<div class="container-1">
+ <script id="stay22-script">
   document.addEventListener("DOMContentLoaded", function(e) {
     // 1. Edit widget size
     var settings22 = {
-      width: '100%', // set the width in px or %
+      width: '80%', // set the width in px or %
       height: '590px' // set the height in px or %
     };
     // 2. Fill out your config here and the rest should work
@@ -31,6 +35,10 @@
     var params22=''; for (var key in s22obj){if (params22){params22 +='&';}params22 +=key + '=' + encodeURIComponent(s22obj[key]);}var div22=document.getElementById('stay22-script'); div22.insertAdjacentHTML('afterend', '<iframe id="stay22-widget" width="' + settings22.width + '" height="' + settings22.height + '" src="' + 'https://www.stay22.com/embed/gm?' + params22 + '" frameborder="0"></iframe>');
   });
 </script>
+</div>
+
+
+<!-- Footer -->
 
 <div class="footer">
   <div class="footer-links">
