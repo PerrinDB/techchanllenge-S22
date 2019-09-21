@@ -4,15 +4,27 @@
 
 
 <!-- Banner -->
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1558981420-c532902e58b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1777&q=80);">
   <div class="container">
     <h1>Stay22</h1>
-    <p>Upgrade your stay</p>
+    <p>An accommodation map
+      for event & travel businesses</p>
   </div>
 </div>
 
+<!-- Text -->
 
 <h1 class="text"> SPACE </h1>
+
+<h2>Montreal Space Symposium</h2>
+
+<h3> Going Beyound: </h3>
+
+<div class="container-2">
+  <h5>These are exciting times in the space sector. Today’s greatest breakthroughs in space discoveries, technological innovations, and investments are happening; and they are increasing exponentially in numbers. A big factor contributing to these pivotal efforts is the increasingly interdisciplinary nature of space research, and an expanding international interest in space. It is crucial that we, as Canadians and world citizens, embark upon efforts for space endeavors and join forces to make the impossible, possible.</h5>
+
+</div>
+<h3>Find Accomodation Below</h3>
 
 
 <!-- Stay22 Map -->
@@ -27,9 +39,9 @@
     // 2. Fill out your config here and the rest should work
     var s22obj = {
       aid: 'affiliateid', // your affiliate id for tracking
-      address: 'Centre Bell, Montreal' , // Lat/Lng or full street address. For latlng use the "lat":,"lng": keys instead
-      checkin: '2020-08-22', // checkin date for their stay in MM/DD/YYYY or ISO 8601 format
-      maincolor: '00549E' // your main brand color in hex (without the #)
+      address: '999 Boulevard Robert-Bourassa, Montréal, QC H3C 6J7' , // Lat/Lng or full street address. For latlng use the "lat":,"lng": keys instead
+      checkin: '2019-10-10', // checkin date for their stay in MM/DD/YYYY or ISO 8601 format
+      maincolor: 'ffbf19' // your main brand color in hex (without the #)
     };
     // Leave this part intact
     var params22=''; for (var key in s22obj){if (params22){params22 +='&';}params22 +=key + '=' + encodeURIComponent(s22obj[key]);}var div22=document.getElementById('stay22-script'); div22.insertAdjacentHTML('afterend', '<iframe id="stay22-widget" width="' + settings22.width + '" height="' + settings22.height + '" src="' + 'https://www.stay22.com/embed/gm?' + params22 + '" frameborder="0"></iframe>');
@@ -42,10 +54,10 @@
 
 <div class="footer">
   <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="https://github.com/PerrinDB/techchanllenge-S22" target="_blank"><i class="fab fa-github"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/perrin-bryson/" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
   <div class="footer-copyright">
 <!--     This footer is made with <i class="fas fa-heart"></i> by Perrin Bryson
