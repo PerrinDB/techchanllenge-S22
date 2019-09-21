@@ -1,3 +1,3 @@
 class Event < ApplicationRecord
-  belongs_too :city
+  belongs_to :city
 end
